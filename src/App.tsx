@@ -5,6 +5,7 @@ function App() {
   console.log(menuItems)
   
   return (
+
     <>
       <header className="bg-teal-400 py-5">
 
@@ -27,7 +28,7 @@ function App() {
                   key={item.id} 
                   item={item} />
 
-              ))}
+            ))}
 
          </div>
 
