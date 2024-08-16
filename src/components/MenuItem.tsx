@@ -1,9 +1,9 @@
-import type { Dish} from "../types"
+import type { Product} from "../types"
 
 type MenuItemProps = {
 
-    item: Dish
-    addItem: (item : Dish) => void 
+    item: Product
+    addItem: (item : Product) => void 
     
 }
 

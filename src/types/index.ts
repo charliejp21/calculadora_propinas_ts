@@ -1,4 +1,4 @@
-export type Dish = {
+export type Product = {
 
     id: number,
     name: string,
@@ -6,7 +6,7 @@ export type Dish = {
 
 }
 
-export type OrderItem = Dish & {
+export type OrderItem = Product & {
 
     quantity: number
     
