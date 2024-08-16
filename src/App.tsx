@@ -9,7 +9,7 @@ function App() {
     <>
       <header className="bg-teal-400 py-5">
 
-        <h1 className="text-center text-4xl font-black">Calculadora de propinas y consumos</h1>
+        <h1 className="text-center text-4xl font-black">Ropa industrial</h1>
 
       </header>
 
@@ -36,7 +36,7 @@ function App() {
   
         <div>
 
-          <h2>Consumo</h2>
+          <h2>Compras</h2>
 
         </div>
 
