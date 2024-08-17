@@ -13,7 +13,7 @@ function App() {
 
       </header>
 
-      <main className="max-w-7xl max-auto py-20 grid md:grid-cols-2">
+      <main className="max-w-7xl mx-auto py-20 grid md:grid-cols-2">
 
         <div className="p-5">
 
