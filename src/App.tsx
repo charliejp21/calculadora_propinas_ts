@@ -1,15 +1,17 @@
 import { menuItems } from "./data/db"
-import { MenuItem } from "./components/MenuItem"
+import MenuItem from "./components/MenuItem"
+import useOrder from "./hooks/useOrder"
+
 function App() {
 
-  console.log(menuItems)
+  const {addItem} = useOrder()
   
   return (
 
     <>
       <header className="bg-teal-400 py-5">
 
-        <h1 className="text-center text-4xl font-black">Ropa industrial</h1>
+        <h1 className="text-center text-4xl font-black">Calculadora de propinas y consumo</h1>
 
       </header>
 
@@ -17,26 +19,27 @@ function App() {
 
         <div className="p-5">
 
-         <h2 className="text-4xl font-black">Menú</h2>
+          <h2 className="text-4xl font-black">Menú</h2>
 
-          <div className="space-y-3 mt-10">
+            <div className="space-y-3 mt-10">
 
-            {menuItems.map(item => (
+              {menuItems.map(item => (
 
-                <MenuItem 
-              
-                  key={item.id} 
-                  item={item} />
+                  <MenuItem 
+                
+                    key={item.id} 
+                    item={item}
+                    addItem={addItem} />
 
-            ))}
+              ))}
 
-         </div>
+            </div>
 
         </div>
   
         <div>
 
-          <h2>Compras</h2>
+          <h2>Consumo</h2>
 
         </div>
 
