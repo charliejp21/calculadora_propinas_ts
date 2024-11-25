@@ -1,4 +1,4 @@
-export type Product = {
+export type MenuItem = {
 
     id: number,
     name: string,
@@ -6,7 +6,7 @@ export type Product = {
 
 }
 
-export type OrderItem = Product & {
+export type OrderItem = MenuItem & {
 
     quantity: number
     

@@ -1,13 +1,13 @@
-import type { Product} from "../types"
+import type { MenuItem } from "../types"
 
 type MenuItemProps = {
 
-    item: Product
-    addItem: (item : Product) => void 
+    item: MenuItem,
+    addItem: (item: MenuItem) => void
     
 }
 
-export const MenuItem = ({item, addItem}: MenuItemProps) => {
+export default function MenuItem ({item, addItem}: MenuItemProps) {
   return (
     <button 
       className="border-2 border-teal-400 hover:bg-teal-200 w-full p-3 flex justify-between mb-5"
