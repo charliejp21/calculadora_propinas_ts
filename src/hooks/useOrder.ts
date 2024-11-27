@@ -5,6 +5,8 @@ export default function useOrder(){
 
     const [order, setOrder] = useState<OrderItem[]>([])
 
+    const [propina, setPropina] = useState(0)
+
     const addItem = (item: MenuItem) => {
 
         const itemExists = order.find(orderItem => orderItem.id === item.id )
@@ -34,6 +36,8 @@ export default function useOrder(){
     return{
         
         order,
+        propina,
+        setPropina,
         addItem,
         removeItem
     }
