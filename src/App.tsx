@@ -1,7 +1,7 @@
 import { menuItems } from "./data/db"
 import MenuItem from "./components/MenuItem"
 import OrderTotals from "./components/OrderTotals"
-import PropinaForm from "./components/propinaForm"
+import PropinaForm from "./components/PropinaForm"
 import useOrder from "./hooks/useOrder"
 import OrderContents from "./components/OrderContents"
 
