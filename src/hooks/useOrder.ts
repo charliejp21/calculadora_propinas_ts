@@ -33,12 +33,19 @@ export default function useOrder(){
 
     }
 
+    const placeOrder = () => {
+
+        setOrder([])
+        setPropina(0)
+    }
+ 
     return{
         
         order,
         propina,
         setPropina,
         addItem,
-        removeItem
+        removeItem, 
+        placeOrder
     }
 }
